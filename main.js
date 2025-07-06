@@ -6,7 +6,7 @@ const botoes = document.querySelectorall('.parametro-senha-botoes')
 
 botoes[0].onclick = diminuitananho;
 
-function diminuitananho{}{
+function diminuitananho{
     tamanhosenha = tamanhosenha-1;
     numerosenha.textContent = tamanhosenha;
 }
