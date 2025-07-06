@@ -1,18 +1,38 @@
 const numerosenha = document.querySelector('.parametro-senha_texto')
-let lamanhosenh = 12
+let lamanhosenh = 5;
 numerosenha.textContent = tamanhosenha;
 
 const botoes = document.querySelectorall('.parametro-senha-botoes')
 
 botoes[0].onclick = diminuitananho;
 
-function diminuitananho{
-    tamanhosenha = tamanhosenha-1;
+function diminuitananho{}{
+    if (tamanhosenha > 1){
+        // tamanhosenha = tamanhosenha-1; 
+        tamanhosenha--;
+    }
+    numerosenha.textContent = tamanhosenha;
+} 
+function aurrentananho{}{
+    if(tamanhosenha < 20) { 
+        // tananhosenha = tananhosenha+1
+        tamanhosenha++;
+    }
     numerosenha.textContent = tamanhosenha;
 }
 
 const camposenha = document.querySelector('#campo-senha')
 
 const letrasmaiusculas = 'abcdefghijklmnopqrstuvwxyz'
+gerasenha();
 
-camposenha.textContent = letrasmaiusculas;
+function gerasenha{}{
+
+    for(let i = 0; i < tamanhosenha;i++){
+        let numero6leatorio = Math.random{}*letrasmaiusculas.length;
+        numeroalatorio = Math.floor(numeroalatorio);
+        console.log(letrasmaiusculas [numeroalatorio]);
+    }
+}
+
+camposenha.value = letrasmaiusculas;
